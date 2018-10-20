@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: texlive-2017:latest
+    steps:
+      - checkout
+      - run:
+          name: Permission
+          command: chmod +x makeall.sh
+      - run:
+          name: Compile
+          command: ./makeall.sh
