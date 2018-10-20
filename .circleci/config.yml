@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: texlive-2017:latest
+      - image: sumdoc/texlive-2017:latest
     steps:
       - checkout
       - run:
